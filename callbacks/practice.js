@@ -97,11 +97,14 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
-function random (array, name, cb)
-  if (random[] == name){
-    cb(name)
-  }
-    else
+function contains (arr, name, cb){
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === name){
+      cb(true);
+    }
+  } cb(false);
+}
+
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -123,9 +126,17 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
-function uniq (array, callback){
-  
-}
+
+// function uniq (arr, cb){
+//   for (let i = 0; i < array.length; i++){
+//     for(let j = i+1; j < array.length; j++){
+//       if(array[i] === array[j]{
+//         arr.splice(j,1);
+//       }
+//     }
+//   } callback(array);
+// }
+
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
