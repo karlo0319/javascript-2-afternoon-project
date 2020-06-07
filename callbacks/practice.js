@@ -102,7 +102,8 @@ function contains (arr, name, cb){
     if (arr[i] === name){
       cb(true);
     }
-  } cb(false);
+  }
+   cb(false);
 }
 
 
@@ -128,13 +129,14 @@ contains(names, 'Colt', function(result){
 //Code Here
 
 // function uniq (arr, cb){
-//   for (let i = 0; i < array.length; i++){
-//     for(let j = i+1; j < array.length; j++){
-//       if(array[i] === array[j]{
+//   for (let i = 0; i < arr.length; i++){
+//     for(let j = i+1; j < arr.length; j++){
+//       if(arr[i] === arr[j]{
 //         arr.splice(j,1);
 //       }
 //     }
-//   } callback(array);
+//   } 
+//     cb(arr)
 // }
 
 // Do not edit the code below.
@@ -153,6 +155,12 @@ uniq(names, function(uniqArr){
 */
 
 //Code Here 
+function each(names, callback){
+  for(let i=0; i<names.length; i++){
+    callback(names[i],i)
+  }
+}
+
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -170,7 +178,15 @@ each(names, function(item, indice){
 */
 
 // Code here
-
+function getUserById(users, id, callback){
+  let foundUser = {};
+  for (let i=0; i<users.length; i++){
+    if (users[i].id === id){
+      foundUser = users[1];
+    }
+  } 
+  callback(foundUser)
+}
 // Do not edit the code below.
 var users = [
   {
