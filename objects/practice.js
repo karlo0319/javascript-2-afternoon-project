@@ -127,15 +127,19 @@ let methodCollection = {}
 */
 
 //Code Here
-  methodCollection.alertHello = alert('hello'),
-  methodCollection.logHello = console.log('hello')
-
+  methodCollection.alertHello = function(){
+    alert('hello');
+  }
+  methodCollection.logHello = function(){
+    console.log('hello');
+  }
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+alertHello();
+logHello();
 ////////// PROBLEM 6 //////////
 
 /*
@@ -144,9 +148,8 @@ let methodCollection = {}
 */
 
 //Code Here
-// function makePerson (name, birthday, ssn){
-//   return ('karlo', 'march', '0387')
-// }
+
+
 
 ////////// PROBLEM 7 //////////
 
@@ -156,6 +159,3 @@ let methodCollection = {}
 */
 
 //Code Here
-// function makeCard (cardNumber, expirationDate, securityCode){
-//   return()
-// };

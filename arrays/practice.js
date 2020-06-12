@@ -129,7 +129,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider(numArray){
+  let newNumsArray = []
+  let evensArray = [];
+  let oddsArray = [];
+   for(let i = 0; i < numArray.length; i++){
+     if(numArray[i] % 2 === 0){
+      evensArray.push(numArray[i]);
+     }else{
+       oddsArray.push(numArray[i]);
+    }
+   }
+   newNumsArray.push([...evensArray],[...oddsArray]);
+   return newNumsArray;
+ }
+ divider(numbersArray);
 
 
 ////////// PROBLEM 7 //////////
@@ -151,6 +165,7 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+
 
 
 
@@ -190,7 +205,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  
+}
 
 
 ////////// PROBLEM 10 //////////
